@@ -11,6 +11,7 @@ function Card(props){
     }
   
     return (
+      <div className="card-deck">
       <div className={classes()} style={{maxWidth: "18rem"}}>
         <div className="card-header">{props.header}</div>
         <div className="card-body">
@@ -19,6 +20,7 @@ function Card(props){
           {props.body}
           {props.status && (<div id='createStatus'>{props.status}</div>)}
         </div>
+      </div>
       </div>      
     );    
   }
